@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.example.imagepicker.customviews.SquareRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/main_gridView_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_photo" />
+    </com.example.imagepicker.customviews.SquareRelativeLayout>
+    
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/scan_item_normal"/>
+    
+    <ProgressBar
+        android:id="@+id/load_progressBar"
+        android:layout_centerInParent="true"
+        style="@style/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
