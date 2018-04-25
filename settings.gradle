@@ -1,1 +1,1 @@
-include ':app', ':tool_lib'
+include ':app', ':tool_lib', ':imagepicker_lib', ':magicindicator', ':pulltorefresh'
